@@ -22,7 +22,7 @@ function App() {
     if (!validator.isEmail(signupInput.email)) {
       return setError("The email you input is invalid.");
     } else if (signupInput.password.length < 5) {
-      return setError("The password you entered should contain 5 or more characters")
+      return setError("The password you entered should contain 5 or more characters.")
     } else if (signupInput.password !== signupInput.confirmPassword) {
       return setError("The passwords don't match. Try again.")
     }
@@ -62,7 +62,7 @@ function App() {
             Confirm Password
           </label>
           <input
-            type="confirm-password"
+            type="password"
             id="confirm-password"
             name="confirmPassword"
             className="form-control"
